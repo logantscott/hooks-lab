@@ -1,29 +1,39 @@
-import React from './node_modules/react';
-import PropTypes from './node_modules/prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Character = ({ allies, enemies, _id, photoUrl, name, gender, weapon, profession, position }) => (
-  <div id={_id}>
-    <img src={photoUrl} alt={name} />
-    <h2>{name}</h2>
-    <p>Gender: {gender}</p>
-    <p>Allies: {allies}</p>
-    <p>Enemies: {enemies}</p>
-    <p>Weapon: {weapon}</p>
-    <p>Profession: {profession}</p>
-    <p>Position: {position}</p>
-  </div>
-);
+const CharacterDetails = ({ details }) => {
 
-Character.propTypes = {
-  allies: PropTypes.arrayOf(PropTypes.string),
-  enemies: PropTypes.arrayOf(PropTypes.string),
-  _id: PropTypes.string.isRequired,
-  photoUrl: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  gender: PropTypes.string,
-  weapon: PropTypes.string,
-  profession: PropTypes.string,
-  position: PropTypes.string
+  let { _id, name, photoUrl, gender, allies, enemies, weapon, profession, position, affiliation } = details;
+
+  return (
+    <>
+      <img src={photoUrl} alt={name} />
+      <h2>{name}</h2>
+      <p>Gender: {gender}</p>
+      <p>Allies: {allies}</p>
+      <p>Enemies: {enemies}</p>
+      <p>Weapon: {weapon}</p>
+      <p>Profession: {profession}</p>
+      <p>Position: {position}</p>
+      <p>Affiliation: {affiliation}</p>
+    </>
+  );
 };
 
-export default Character;
+CharacterDetails.propTypes = {
+  details: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string,
+    gender: PropTypes.string,
+    allies: PropTypes.arrayOf(PropTypes.string),
+    enemies: PropTypes.arrayOf(PropTypes.string),
+    weapon: PropTypes.string,
+    profession: PropTypes.string,
+    position: PropTypes.string,
+    affiliation: PropTypes.string
+  })
+  
+};
+
+export default CharacterDetails;

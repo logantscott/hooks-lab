@@ -2,7 +2,11 @@
 
 exports[`Character component renders Character 1`] = `
 <p>
-  Aang
+  <a
+    href="/characters/5cf5679a915ecad153ab68ca"
+  >
+    Aang
+  </a>
    - 
   Air Nomads Team Avatar
 </p>
