@@ -4,14 +4,14 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import { CharacterDetails } from '../CharacterDetails/CharacterDetails';
+import Avatar from '../../containers/Avatar';
 
 export default function App() {
   return (
     <Router>
       <h1>Avatar</h1>
       <Switch>
-        <Route path="/characters/:id" component={CharacterDetails}></Route>
+        <Route path="/characters" component={Avatar}></Route>
         <Route></Route>
       </Switch>
     </Router>

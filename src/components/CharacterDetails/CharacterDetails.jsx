@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from './node_modules/react';
+import PropTypes from './node_modules/prop-types';
 
 const Character = ({ allies, enemies, _id, photoUrl, name, gender, weapon, profession, position }) => (
   <div id={_id}>

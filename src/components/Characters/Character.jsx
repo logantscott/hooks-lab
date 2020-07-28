@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Character = ({ _id, name, affiliation }) => (
-  <p>{name} - {affiliation}</p>
+  <p><a href={'/characters/' + _id}>{name}</a> - {affiliation}</p>
 );
 
 Character.propTypes = {
