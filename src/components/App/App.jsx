@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import { CharacterDetails } from '../CharacterDetails';
+import { CharacterDetails } from '../CharacterDetails/CharacterDetails';
 
 export default function App() {
   return (
