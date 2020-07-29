@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterDetails component renders CharacterDetails 1`] = `
+<Fragment>
+  <img
+    alt="Aang"
+  />
+  <h2>
+    Aang
+  </h2>
+  <p>
+    Gender: 
+    male
+  </p>
+  <p>
+    Allies: 
+  </p>
+  <p>
+    Enemies: 
+  </p>
+  <p>
+    Weapon: 
+  </p>
+  <p>
+    Profession: 
+  </p>
+  <p>
+    Position: 
+  </p>
+  <p>
+    Affiliation: 
+    Air Nomads
+  </p>
+</Fragment>
+`;
