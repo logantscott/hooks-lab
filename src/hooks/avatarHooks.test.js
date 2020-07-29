@@ -18,6 +18,18 @@ describe('useAvatar hooks', () => {
     expect(result.current.characters).not.toBeUndefined();
   });
 
+  it('has perPage state', () => {
+    const { result } = renderHook(() => useAvatar());
+
+    expect(result.current.perPage).not.toBeUndefined();
+  });
+
+  it('has pageNum state', () => {
+    const { result } = renderHook(() => useAvatar());
+
+    expect(result.current.pageNum).not.toBeUndefined();
+  });
+
   it('sets the characters state on mount', () => {
     const { result, waitFor } = renderHook(() => useAvatar());
 
