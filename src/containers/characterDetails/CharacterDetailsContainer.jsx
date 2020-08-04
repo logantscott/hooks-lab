@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { getCharacterDetails } from '../../services/avatar';
-import CharacterDetails from '../../components/characterDetails/CharacterDetails';
+import CharacterDetails from '../../components/CharacterDetails/CharacterDetails';
 
 const CharacterDetailsContainer = ({ match }) => {
   const [characterDetails, setCharacterDetails] = useState([]);
